@@ -10,7 +10,6 @@
     "license": "Apache License 2.0",
     "dependencies": {
         "@types/sequelize": "^4.27.4",
-        "mysql2": "^1.6.4",
         "sequelize": "^4.41.2"
     },
     "devDependencies": {
