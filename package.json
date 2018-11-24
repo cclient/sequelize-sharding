@@ -1,0 +1,30 @@
+{
+    "name": "sequelize-sharding",
+    "version": "1.0.0",
+    "description": "sequelize Model hooks for sharded-table that like [tablename]_yyyy_mm...",
+    "main": "index.js",
+    "keywords": [
+        "sequelize", "sequelize-sharding"
+    ],
+    "author": "Cuidapeng",
+    "license": "Apache License 2.0",
+    "dependencies": {
+        "@types/sequelize": "^4.27.4",
+        "mysql2": "^1.6.4",
+        "sequelize": "^4.41.2"
+    },
+    "devDependencies": {
+        "del": "^2.0.2",
+        "gulp": "^3.9.0",
+        "gulp-jslint": "*",
+        "gulp-sourcemaps": "^1.5.2",
+        "gulp-typescript": "^2.9.0",
+        "merge2": "^0.3.6",
+        "typescript": "next"
+    },
+    "scripts": {
+        "test": "node test/test.js",
+        "gulp": "./node_modules/.bin/gulp",
+        "build": "./node_modules/.bin/gulp build"
+    }
+}

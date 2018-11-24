@@ -1,0 +1,13 @@
+sequelize deprecated Model.insertOrUpdate has been deprecated, please use Model.upsert instead node_modules/sequelize/lib/model.js:4224:9
+beforeUpsert set custom tableName user_2018_10
+Executing (default): INSERT INTO `user_2018_10` (`name`,`birthday`) VALUES ('china','2018-10-01 00:00:00') ON
+DUPLICATE KEY UPDATE `name`=VALUES(`name`), `birthday`=VALUES(`birthday`);
+beforeUpsert set custom tableName user_2018_10_test
+Executing (default): INSERT INTO `user_2018_10_test` (`name`,`birthday`) VALUES ('china','2018-10-01 00:00:00'
+) ON DUPLICATE KEY UPDATE `name`=VALUES(`name`), `birthday`=VALUES(`birthday`);
+beforeUpsert set custom tableName user_2018_01
+Executing (default): INSERT INTO `user_2018_01` (`name`,`birthday`) VALUES ('china','2018-10-01 00:00:00') ONDUPLICATE KEY UPDATE `name`=VALUES(`name`), `birthday`=VALUES(`birthday`);
+beforeUpsert set custom tableName user_2018_01_test
+Executing (default): INSERT INTO `user_2018_01_test` (`name`,`birthday`) VALUES ('china','2018-10-01 00:00:00') ON DUPLICATE KEY UPDATE `name`=VALUES(`name`), `birthday`=VALUES(`birthday`);
+beforeUpsert set custom tableName user_2018_10_void
+Executing (default): INSERT INTO `user_2018_10_void` (`name`,`birthday`) VALUES ('china','2018-10-01 00:00:00') ON DUPLICATE KEY UPDATE `name`=VALUES(`name`), `birthday`=VALUES(`birthday`);
