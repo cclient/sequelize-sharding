@@ -3,15 +3,10 @@
     "version": "1.0.0",
     "description": "sequelize Model hooks for sharded-table that like [tablename]_yyyy_mm...",
     "main": "index.js",
-    "keywords": [
-        "sequelize", "sequelize-sharding"
-    ],
+    "keywords": [],
     "author": "Cuidapeng",
     "license": "Apache License 2.0",
-    "dependencies": {
-        "@types/sequelize": "^4.27.4",
-        "sequelize": "^4.41.2"
-    },
+    "dependencies": {},
     "devDependencies": {
         "del": "^2.0.2",
         "gulp": "^3.9.0",
