@@ -1,6 +1,6 @@
 ### desc
 
-sequelize Model hooks for sharded-table that like [tablename]_yyyy_mm...( table should be created before)
+sequelize Model hooks for sharded-table that like `[tablename]_yyyy_mm`...( table should be created before)
 
 use sequelize original hooks as a "AOP" to change target table name
 
@@ -8,9 +8,9 @@ use sequelize original hooks as a "AOP" to change target table name
 
 ### start
 
-npm install sequelize
+* `npm install sequelize`
 
-npm install sequelize-sharding
+* `npm install git@github.com:cclient/sequelize-sharding.git` or add dependencies `sequelize-sharding":git@github.com:cclient/sequelize-sharding.git` then `npm install`
 
 ### original sequelize
 
@@ -64,15 +64,13 @@ User.insertOrUpdate(user)
 
 ```ts
 
-import { useCustomTableName} from '../';
+import { useCustomTableName} from 'sequelize-sharding';
 useCustomTableName(sequelize, User, "birthday", true)
 User.insertOrUpdate(user)
 
 ```
 
-###
-
-define function to generate table's postfix like
+### custom function to generate table's postfix like
 
 ```fun
 
@@ -80,6 +78,6 @@ useCustomTableName(sequelize, User, null, false, function(value) {
     return getYYMM(new Date())
 })
 
-detail see test/test.js
-
 ```
+
+more detail see test/test.js
